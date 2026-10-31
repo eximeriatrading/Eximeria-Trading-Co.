@@ -8,8 +8,7 @@ export const SITE = {
   phoneHref: "tel:+919561948925",
   whatsappHref: "https://wa.me/919561948925",
   hours: "Mon – Sat, 9:00 AM – 7:00 PM IST",
-  // Used everywhere the site states experience (the design had "15 years" in one place,
-  // "two decades" in another and a blank on About). Set the true figure here.
+  // Only the Services page ("We've spent N years...") states a figure; About deliberately doesn't.
   yearsInBusiness: 15,
   certifications: ["ISO 9001", "FIEO", "DGFT"],
 };
@@ -280,7 +279,7 @@ export const VALUES = [
 ];
 
 export const APART = [
-  { title: "Years of Trade Expertise", text: `${SITE.yearsInBusiness}+ years of navigating complex trade lanes, regulatory frameworks, and market shifts across 50+ countries.` },
+  { title: "Years of Trade Expertise", text: "Years of navigating complex trade lanes, regulatory frameworks, and market shifts across 50+ countries." },
   { title: "Verified Supplier Network", text: "Every supplier in our network is audited for quality, compliance, and reliability — so you never have to take a risk on an unknown source." },
   { title: "End-to-End Ownership", text: "From sourcing to final delivery, we own the entire trade cycle. One point of contact. Zero handoff gaps." },
   { title: "Compliance-First Approach", text: "Sanctions screening, product certification, customs documentation — every shipment is cleared before it moves." },

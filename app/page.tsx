@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroVideo from "@/components/HeroVideo";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { CATEGORIES, HOME_WHY, REGIONS, STATS } from "@/lib/content";
@@ -8,7 +9,8 @@ export default function HomePage() {
     <>
       {/* 5.1 Hero */}
       <section className="hero">
-        <div className="hero__bg" style={{ backgroundImage: "url(/images/hero-port.jpg)" }} />
+        <div className="hero__bg" style={{ backgroundImage: "url(/images/hero-port-poster.jpg)" }} />
+        <HeroVideo />
         <div className="hero__overlay" />
         <div className="container">
           <div className="hero__content">

@@ -49,11 +49,17 @@ Tabs are deep-linkable: `/products#textiles-apparel`, `/services#freight-logisti
 ## Editing content
 
 All copy (categories, services, stats, regions, values, contact details) lives in
-[lib/content.ts](lib/content.ts). `SITE.yearsInBusiness` drives every "years of experience" mention.
+[lib/content.ts](lib/content.ts). `SITE.yearsInBusiness` sets the figure shown on the Services page.
 
 Images are in `public/images/` (stock photos from Unsplash). Replace them with your own using the
-same file names. The logo is an SVG placeholder in [components/Logo.tsx](components/Logo.tsx);
-swap in the real logo file there.
+same file names. The logo is `public/logo.png`, with a white-wordmark version for the dark theme in
+`public/logo-dark.png`.
+
+The Home hero video is `public/videos/hero-port.mp4` (Mixkit clip "From day to night in the Hong Kong
+container port", played forward then in reverse so it loops smoothly). `public/images/hero-port-poster.jpg`
+shows until it plays, and for visitors with reduced motion or data saver turned on.
+
+The dark theme uses the colour overrides in the `[data-theme="dark"]` block of `app/globals.css`.
 
 Design tokens (colours, fonts, spacing) are CSS variables at the top of [app/globals.css](app/globals.css).
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import { APART, SITE, VALUES } from "@/lib/content";
+import { APART, VALUES } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
@@ -18,7 +18,7 @@ export default function AboutPage() {
             <span className="eyebrow">About Eximeria</span>
             <h1 className="h1">Built on Trust. Driven by Trade.</h1>
             <p className="lead">
-              For over {SITE.yearsInBusiness} years, Eximeria Trading Co. has connected businesses across continents —
+              Over the years, Eximeria Trading Co. has connected businesses across continents —
               delivering reliable sourcing, compliant logistics, and end-to-end trade management at scale.
             </p>
           </Reveal>
