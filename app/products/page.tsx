@@ -7,6 +7,7 @@ import { CATEGORIES, STEPS } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Products",
   description: "Agri & Food, Textiles & Apparel, Industrial Machinery, Raw Materials and Consumer Goods, sourced and delivered worldwide.",
+  alternates: { canonical: "/products" },
 };
 
 export default function ProductsPage() {

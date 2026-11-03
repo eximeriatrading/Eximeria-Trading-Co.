@@ -6,6 +6,7 @@ import { APART, VALUES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "About",
   description: "Built on trust, driven by trade. Learn about Eximeria Trading Co.'s mission, vision and values.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

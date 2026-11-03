@@ -9,6 +9,7 @@ import { SITE } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Send Eximeria Trading Co. a trade enquiry. Our trade desk replies within 24 hours.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

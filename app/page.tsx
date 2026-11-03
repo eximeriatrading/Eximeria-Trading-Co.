@@ -1,8 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import HeroVideo from "@/components/HeroVideo";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { CATEGORIES, HOME_WHY, REGIONS, STATS } from "@/lib/content";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function HomePage() {
   return (

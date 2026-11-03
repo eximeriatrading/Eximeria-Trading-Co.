@@ -8,6 +8,7 @@ import { SERVICES, SERVICES_WHY, SITE } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Services",
   description: "Import & export management, freight & logistics, compliance, documentation, supply chain and trade finance support.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
