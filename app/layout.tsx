@@ -10,9 +10,6 @@ import { getSiteUrl, isIndexable } from "@/lib/site-url";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-space-grotesk", display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-// Runs before first paint so a saved dark theme never flashes light. The default is light, as designed.
-const THEME_SCRIPT = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
-
 const SITE_URL = getSiteUrl();
 const DESCRIPTION =
   "Eximeria Trading Co. connects global buyers and sellers across agri, textiles, machinery, raw materials, and consumer goods, with precision, compliance, and scale.";
@@ -60,9 +57,8 @@ const ORGANIZATION_JSON_LD = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`} data-theme="light" suppressHydrationWarning>
+    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }} />
       </head>
       <body>

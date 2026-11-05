@@ -12,7 +12,7 @@
   --text-meta-dark: #6b6f78;
   --hairline: #e6e1d8;
 
-  /* Theme-aware roles. --white and --ink stay fixed for text on photos, gold and dark bands. */
+  /* Surface and text roles. --white and --ink are used directly for text on photos, gold and dark bands. */
   --surface: #ffffff;
   --card: #ffffff;
   --heading: #0e0f14;
@@ -34,26 +34,6 @@
   --gutter: 36px;
   --section-y: 112px;
   --header-h: 76px;
-}
-
-[data-theme="dark"] {
-  color-scheme: dark;
-  --gold-tint: rgba(206, 145, 23, .16);
-  --cream: #181b22;
-  --field: #232731;
-  --text-body: #a9adb7;
-  --hairline: #2c303a;
-  --surface: #12141a;
-  --card: #1e222a;
-  --heading: #f3f4f6;
-  --text-strong: #d5d8de;
-  --text-muted: #a9adb7;
-  --hairline-soft: #252932;
-  --row-hover: #1a1d24;
-  --placeholder: #7d818b;
-  --error: #fb923c;
-  --header-bg: rgba(18, 20, 26, .92);
-  --header-border: rgba(255, 255, 255, .08);
 }
 
 *,
@@ -186,16 +166,11 @@ a:hover .link-arrow span, .link-arrow:hover span { transform: translateX(3px); }
 .nav-link.is-active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: var(--gold); }
 .header__cta { display: flex; align-items: center; gap: 12px; }
 .menu-toggle { display: none; background: none; border: 0; padding: 8px; color: var(--heading); }
-.theme-toggle { display: inline-grid; place-items: center; width: 42px; height: 42px; background: none; border: 1px solid var(--hairline); border-radius: var(--radius); color: var(--heading); transition: color .2s, border-color .2s; }
-.theme-toggle:hover { color: var(--gold); border-color: var(--gold); }
 .mobile-nav { display: none; }
 
 /* ===== Logo ===== */
 .logo { display: inline-flex; align-items: center; flex: none; }
 .logo__img { height: 52px; width: auto; }
-.logo__img--dark { display: none; }
-[data-theme="dark"] .logo:not(.logo--plate) .logo__img--light { display: none; }
-[data-theme="dark"] .logo__img--dark { display: block; }
 .logo--plate { background: var(--white); padding: 8px 12px; border-radius: 2px; }
 
 /* ===== Heroes ===== */
@@ -390,7 +365,6 @@ a.info-card__value:hover { color: var(--gold); }
 .input::placeholder { color: var(--placeholder); }
 .input:focus { outline: none; border-color: var(--gold); background: var(--card); box-shadow: 0 0 0 3px rgba(206,145,23,.18); }
 select.input { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%235d6068' stroke-width='1.6' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
-[data-theme="dark"] select.input { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23a9adb7' stroke-width='1.6' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); }
 textarea.input { height: auto; min-height: 120px; padding: 12px 14px; resize: vertical; line-height: 1.55; }
 .input[aria-invalid="true"] { border-color: var(--error); }
 .field-error { font-size: 12px; color: var(--error); margin-top: 6px; }

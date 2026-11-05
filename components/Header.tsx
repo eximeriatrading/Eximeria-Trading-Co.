@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import ThemeToggle from "./ThemeToggle";
 import { NAV } from "@/lib/content";
 
 export default function Header() {
@@ -37,7 +36,6 @@ export default function Header() {
           {links}
         </nav>
         <div className="header__cta">
-          <ThemeToggle />
           <Link href="/contact" className="btn btn--primary">
             Get a Quote
           </Link>
